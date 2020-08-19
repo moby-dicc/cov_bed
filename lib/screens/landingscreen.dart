@@ -1,4 +1,5 @@
 import 'package:cov_bed/screens/homepage.dart';
+import 'package:cov_bed/screens/login.dart';
 import 'package:cov_bed/utlis/loader.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class _LandingPageState extends State<LandingPage> {
         if (snapshot.connectionState == ConnectionState.active) {
           FirebaseUser user = snapshot.data;
           if (user == null) {
-            return MyHomePage();
+            return LoginScreen();
           }
           return MyHomePage();
         } else {

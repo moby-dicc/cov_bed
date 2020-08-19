@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  LoginScreen({Key key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Covid Bed"),
       ),
       body: Center(
-        child: Text("Home Page"),
+        child: Text("Login Page"),
       ), 
     );
   }
