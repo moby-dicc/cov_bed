@@ -50,7 +50,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>
     return Scaffold(
       body: Center(
         child: new Image.asset(
-          'assets/logo.png',
+          'assets/cov-bed.png',
           width: animation.value * 250,
           height: animation.value * 250,
         ),
