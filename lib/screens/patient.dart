@@ -136,8 +136,8 @@ class _PatientPageState extends State<PatientPage> {
                       SizedBox(height: screenWidth * 0.03),
                       SmallCard(
                         iconSvg: "assets/icons/distance.svg",
-                        unit: "kms",
-                        value: widget.patient.lastValue.toString(),
+                        unit: "View Details",
+                        value: " ",
                         height: screenHeight * 0.15,
                         width: screenWidth * 0.35,
                       )
@@ -165,7 +165,7 @@ class _PatientPageState extends State<PatientPage> {
                       CustomCard(
                         iconSvg: "assets/icons/stairs.svg",
                         unit: "floors",
-                        value: 56.toString(),
+                        value: widget.patient.lastValue.toString(),
                         height: screenHeight * 0.25,
                         width: screenWidth * 0.35,
                       )
