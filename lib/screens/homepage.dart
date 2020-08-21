@@ -1,11 +1,9 @@
-import 'package:cov_bed/components/customCard.dart';
-import 'package:cov_bed/components/smallCard.dart';
+
 import 'package:cov_bed/model/patients.dart';
 import 'package:cov_bed/screens/patient.dart';
-import 'package:cov_bed/utlis/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
+
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
@@ -99,8 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             child: new SvgPicture.asset(
-                              "assets/icons/account_circle.svg",
+                              "assets/icons/patient.svg",
                               color: Colors.blue,
+                              width: 25.0,
                             ),
                           ),
                           title: new Text(

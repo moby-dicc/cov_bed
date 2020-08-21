@@ -91,8 +91,10 @@ class _PatientPageState extends State<PatientPage> {
                                 animation: true,
                                 percent: 0.7,
                                 center: new SvgPicture.asset(
-                                  "assets/icons/calorie.svg",
+                                  "assets/icons/temperature.svg",
                                   color: Colors.white,
+                                  width: 40,
+                                  height: 40,
                                 ),
                                 circularStrokeCap: CircularStrokeCap.round,
                                 progressColor: Colors.white,
@@ -134,13 +136,13 @@ class _PatientPageState extends State<PatientPage> {
                         width: screenWidth * 0.35,
                       ),
                       SizedBox(height: screenWidth * 0.03),
-                      SmallCard(
-                        iconSvg: "assets/icons/distance.svg",
-                        unit: "View Details",
-                        value: " ",
-                        height: screenHeight * 0.15,
-                        width: screenWidth * 0.35,
-                      )
+                      // SmallCard(
+                      //   iconSvg: "assets/icons/heartline.svg",
+                      //   unit: "View Details",
+                      //   value: " ",
+                      //   height: screenHeight * 0.15,
+                      //   width: screenWidth * 0.35,
+                      // )
                     ],
                   ),
                   SizedBox(width: screenWidth * 0.03),
@@ -148,23 +150,23 @@ class _PatientPageState extends State<PatientPage> {
                     children: <Widget>[
                       SmallCard(
                         value: widget.patient.spo.toString(),
-                        unit: "kcal",
-                        iconSvg: "assets/icons/moon.svg",
+                        unit: "",
+                        iconSvg: "assets/icons/oxygen.svg",
                         height: screenHeight * 0.15,
                         width: screenWidth * 0.35,
                       ),
                       SizedBox(height: screenWidth * 0.03),
                       CustomCard(
-                        iconSvg: "assets/icons/foot.svg",
-                        value: 34.toString(),
-                        unit: "steps",
+                        iconSvg: "assets/icons/ph.svg",
+                        value: widget.patient.pH.toString(),
+                        unit: " ",
                         height: screenHeight * 0.25,
                         width: screenWidth * 0.35,
                       ),
                       SizedBox(height: screenWidth * 0.03),
                       CustomCard(
-                        iconSvg: "assets/icons/stairs.svg",
-                        unit: "floors",
+                        iconSvg: "assets/icons/analysis.svg",
+                        unit: "%",
                         value: widget.patient.lastValue.toString(),
                         height: screenHeight * 0.25,
                         width: screenWidth * 0.35,

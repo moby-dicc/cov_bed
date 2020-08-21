@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:cov_bed/utlis/constants.dart';
 
 class CustomCard extends StatefulWidget {
   final String iconSvg;
@@ -31,7 +30,9 @@ class _CustomCardState extends State<CustomCard> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SvgPicture.asset(widget.iconSvg,
-                color: primaryColor, 
+                height: 50.0,
+                width: 50.0,
+               
                 semanticsLabel: 'A red up arrow'),
             Padding(
               padding: const EdgeInsets.all(8),

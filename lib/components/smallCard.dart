@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:cov_bed/utlis/constants.dart';
 
 class SmallCard extends StatefulWidget {
   final String iconSvg;
@@ -32,7 +31,6 @@ class _SmallCardState extends State<SmallCard> {
           children: <Widget>[
             SvgPicture.asset(
               widget.iconSvg,
-              color: primaryColor,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
